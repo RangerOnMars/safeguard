@@ -1,0 +1,5 @@
+<launch>
+  <node pkg="safeguard_main" type="main.py" respawn="false" name="safeguard_main" output="screen">
+    <rosparam file="$(find safeguard_main)/params/cfg.yaml" command="load"/>
+  </node>
+</launch>

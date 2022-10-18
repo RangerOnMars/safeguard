@@ -1,0 +1,6 @@
+<launch>
+  <node pkg="safeguard_detector" type="detector.py" respawn="false" name="safeguard_detector" output="screen">
+    <param name="img_save_path" value="$(find safeguard_detector)/data"/>
+    <rosparam file="$(find safeguard_detector)/cfg/cfg.yaml" command="load"/>
+  </node>
+</launch>

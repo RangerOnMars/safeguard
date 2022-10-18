@@ -1,0 +1,5 @@
+<launch>
+    <node name="rviz" pkg="rviz" type="rviz">
+        <remap from="/move_base_simple/goal" to="/goal"/>
+    </node>
+</launch>

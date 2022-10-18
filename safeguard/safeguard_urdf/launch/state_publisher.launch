@@ -1,0 +1,10 @@
+<launch>
+  <!-- <param name="robot_description" command="cat $(find safeguard_urdf)/urdf/safeguard_urdf.urdf"/> -->
+  <param name="robot_description" textfile="$(find safeguard_urdf)/urdf/safeguard_urdf.urdf"/>
+  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
+  </node>
+  <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher">
+    <param name="publish_frequency" type="double" value="10.0" />
+    <param name="use_tf_static" type="bool" value="true" />
+  </node>
+</launch>

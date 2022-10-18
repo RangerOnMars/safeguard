@@ -1,0 +1,5 @@
+<launch>
+  <node pkg="safeguard_speaker" type="speaker.py" respawn="false" name="safeguard_speaker" output="screen">
+    <rosparam file="$(find safeguard_speaker)/params/cfg.yaml" command="load"/>
+  </node>
+</launch>

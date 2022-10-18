@@ -1,0 +1,8 @@
+<launch>
+  <node pkg="safeguard_transmitter" type="transmitter.py" respawn="false" name="safeguard_transmitter" output="screen">
+    <!-- Com ID string in format "VID:PID",must written in lower. -->
+    <param name="port_id"         type="string" value="1a86:7523"/> 
+    <!-- IMU baudrate -->
+    <param name="serial_baudrate"     type="int"    value="115200"/>
+  </node>
+</launch>

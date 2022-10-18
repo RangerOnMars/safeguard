@@ -1,0 +1,2 @@
+broadcast_info_topic: "safeguard/broadcast_info"
+goal_topic: "/goal"
